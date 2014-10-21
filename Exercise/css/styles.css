@@ -5,11 +5,22 @@
 /* 	Paragraph
 	line-height: 24px; 
 */
+body {
+	background: url("../img/bg.png");
+}
+img {
+	width: 200px;
+}
 
 
 /***************
 	Typography
 ***************/
+
+
+blockquote {
+	font-family: 'Playfair Display', serif;
+}
 
 /*	Paragraph Text Links
 	color: rgb(13, 202, 250);
