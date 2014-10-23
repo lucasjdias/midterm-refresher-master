@@ -2,9 +2,7 @@
 	Global 
 ***************/
 
-/* 	Paragraph
-	line-height: 24px; 
-*/
+
 body {
 	background: url("../img/bg.png");
 }
@@ -18,14 +16,45 @@ img {
 ***************/
 
 
-blockquote {
-	font-family: 'Playfair Display', serif;
+
+/* 	Paragraph
+	line-height: 24px; 
+*/
+
+p {
+	line-height: 24px;
 }
 
-/*	Paragraph Text Links
+h3 {
+	font-family: 'Open Sans', 'sans-serif';
+}
+
+
+blockquote {
+	color: #36d488;
+	font: italic 32px/42px "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+h3 + p {
+	font-weight: bold;
+	font-style: italic;
+}	
+
+p > a {
 	color: rgb(13, 202, 250);
 	border-bottom: 1px solid #fff;
 	text-decoration: none;
+}
+
+/*
+	Paragraph Text Links
+	
+*/	
+
+
+/*	
 */
 
 
@@ -38,6 +67,15 @@ li {
   margin: 0 4px 0 4px;
 }
 
+nav a:link,
+nav a:visited,
+nav a:focus {
+	color: #333;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 10px 10px 32px;
+}
+ 
 
 /* 	Main Nav Links
 	color: #333;
@@ -52,7 +90,29 @@ li {
 	Hover States 
 ***************/
 
+nav a:hover {
+	color: orange;
+}
 
+#mozilla a:hover {
+	background: no-repeat left center url("../img/firefox.png");
+}
+
+#google a:hover {
+	background: no-repeat left center url("../img/chrome.png");
+}
+
+#apple a:hover {
+	background: no-repeat left center url("../img/safari.png");
+}
+
+#microsoft a:hover {
+	background: no-repeat left center url("../img/ie.png");
+}
+
+#opera a:hover {
+	background: no-repeat left center url("../img/opera.png");
+}
 /***************
 	Blockquote 
 ***************/
